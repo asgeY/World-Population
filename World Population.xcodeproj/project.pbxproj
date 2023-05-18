@@ -11,6 +11,8 @@
 		D958A0B62A15B3BF009A5746 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D958A0B52A15B3BF009A5746 /* ContentView.swift */; };
 		D958A0B82A15B3C1009A5746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D958A0B72A15B3C1009A5746 /* Assets.xcassets */; };
 		D958A0BC2A15B3C1009A5746 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D958A0BB2A15B3C1009A5746 /* Preview Assets.xcassets */; };
+		D958A0C32A15B3E7009A5746 /* WorldPopulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D958A0C22A15B3E7009A5746 /* WorldPopulationViewModel.swift */; };
+		D958A0C82A15B71D009A5746 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D958A0C72A15B71D009A5746 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		D958A0B72A15B3C1009A5746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D958A0B92A15B3C1009A5746 /* World_Population.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = World_Population.entitlements; sourceTree = "<group>"; };
 		D958A0BB2A15B3C1009A5746 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D958A0C22A15B3E7009A5746 /* WorldPopulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPopulationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D958A0C82A15B71D009A5746 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 			children = (
 				D958A0B32A15B3BF009A5746 /* World_PopulationApp.swift */,
 				D958A0B52A15B3BF009A5746 /* ContentView.swift */,
+				D958A0C22A15B3E7009A5746 /* WorldPopulationViewModel.swift */,
 				D958A0B72A15B3C1009A5746 /* Assets.xcassets */,
 				D958A0B92A15B3C1009A5746 /* World_Population.entitlements */,
 				D958A0BA2A15B3C1009A5746 /* Preview Content */,
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = "World Population";
+			packageProductDependencies = (
+				D958A0C72A15B71D009A5746 /* Alamofire */,
+			);
 			productName = "World Population";
 			productReference = D958A0B02A15B3BF009A5746 /* World Population.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +121,9 @@
 				Base,
 			);
 			mainGroup = D958A0A72A15B3BF009A5746;
+			packageReferences = (
+				D958A0C62A15B71D009A5746 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D958A0B12A15B3BF009A5746 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D958A0B62A15B3BF009A5746 /* ContentView.swift in Sources */,
+				D958A0C32A15B3E7009A5746 /* WorldPopulationViewModel.swift in Sources */,
 				D958A0B42A15B3BF009A5746 /* World_PopulationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D958A0C62A15B71D009A5746 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D958A0C72A15B71D009A5746 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D958A0C62A15B71D009A5746 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D958A0A82A15B3BF009A5746 /* Project object */;
 }
