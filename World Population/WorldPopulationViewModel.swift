@@ -10,7 +10,7 @@ import Combine
 import Alamofire
 
 struct Config {
-    static let apiKey = "ee00d10908msh796ef7b6fc59ea3p18cc0fjsn1748c7c859e1"
+    static let apiKey = "YOURAPIKEY"
 }
 
 
